@@ -13,8 +13,8 @@
 ## Sobre el proyecto
 
 <div id="sobre-el-proyecto">
-  Jankenpon Game (Rock, Paper, Scissorsi)
-  Está aplicación web tiene como objetivo jugar el piedra papel o tijeras contra un bot.
+  Jankenpon Game (Rock, Paper, Scissors)
+  Está aplicación web tiene como objetivo brindar la oportunidad de jugar el piedra papel o tijeras contra un bot.
 </div>
 
 ## History of the game:
@@ -30,12 +30,12 @@
 <div  id="structure-folder"></div>
 
 ├📁 Css/ `- All files Styles.Css.` <br />
--├─>📄 style.css `- main file style.` <br />
+ /├─>📄 style.css `- main file style.` <br />
 ├📁 desing/ `- All Concep desing.` <br />
 ├📁 Documents/ `- All Documents files.md.` <br />
 ├📁 images/ `- All Images for the project.` <br />
 ├📁 Js/ `- Script Files.` <br />
--├─>📄 app.js `- main file code.` <br />
+/├─>📄 app.js `- main file code.` <br />
 ├📄 index.html `- Main Page.` <br />
 ├📄 ReadMe.md `- info to the project.` <br />
 
