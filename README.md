@@ -1,9 +1,6 @@
 <div  id="top"></div>
 <h3  align="center">Jankenpon-Game</h3>
-<p  align="center">
-Aplicación Web Game
-<br  />
-</p>
+<p  align="center">Aplicación Web Game<br/></p>
 
 **Índice**
 <ul>
@@ -13,11 +10,11 @@ Aplicación Web Game
     <li><a  href="#Technologies">Technologies</a></li>
 </ul>
 
-
 ## Sobre el proyecto
 
 <div id="sobre-el-proyecto">
-  Jankenpon Game (Rock, Paper, Scissorsi): Está aplicación web tiene como objetivo jugar el piedra papel o tijeras contra un bot.
+  Jankenpon Game (Rock, Paper, Scissorsi)
+  Está aplicación web tiene como objetivo jugar el piedra papel o tijeras contra un bot.
 </div>
 
 ## History of the game:
@@ -25,7 +22,7 @@ Aplicación Web Game
 <div  id="History-of-the-game">
     El jankenpon como lo conocemos, que utiliza gestos para representar los elementos piedra, papel y tijera, se hizo común en la versión más moderna del juego, creada a finales del siglo XIX entre los periodos Edo y Meiji. Pero no fue sino hasta principios del siglo XX, con la apertura de Japón a Occidente, que el juego se difundió más allá del país, siendo jugado y reconocido por casi todo el mundo.
 
-    <p  align="right">(<a  href="#top">Ir a inicio</a>)</p>
+<p  align="right">(<a  href="#top">Ir a inicio</a>)</p>
 </div>
 
 ### Estructura de carpetas
@@ -33,12 +30,12 @@ Aplicación Web Game
 <div  id="structure-folder"></div>
 
 ├📁 Css/ `- All files Styles.Css.` <br />
- ├─>📄 style.css `- main file style.` <br />
+-├─>📄 style.css `- main file style.` <br />
 ├📁 desing/ `- All Concep desing.` <br />
 ├📁 Documents/ `- All Documents files.md.` <br />
 ├📁 images/ `- All Images for the project.` <br />
 ├📁 Js/ `- Script Files.` <br />
- ├─>📄 app.js `- main file code.` <br />
+-├─>📄 app.js `- main file code.` <br />
 ├📄 index.html `- Main Page.` <br />
 ├📄 ReadMe.md `- info to the project.` <br />
 
