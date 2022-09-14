@@ -17,7 +17,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10;
 }
 .title {
     position: absolute;
@@ -34,7 +33,7 @@ header ul {
     position: absolute;
     padding: 10px;
     top: 50px;
-    left: -120px;
+    left: -46%;
     width: 200%;
     border-radius: 2px;
     outline-width: hsl(217, 16%, 45%);
@@ -45,11 +44,11 @@ header ul {
 header ul li {
     list-style: none;
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
 } 
 header ul li a {
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
 }
 header ul li#score {
@@ -75,10 +74,111 @@ header ul li#score span {
 section {
     position: relative;
     display: flex;
-    justify-self: space-between;
     align-items: center;
     min-height: 100vh;
     padding: 0 100px;
+}
+section .options {
+    position: absolute;
+    left: 18%;
+    width: 60%;
+    height: 400px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+section .circle-rock {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    bottom: 31%;
+    right: 46.5%;
+    clip-path: circle(80px);
+    background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    z-index: 1;
+}
+section .circle-after-rock {
+    position: absolute;
+    margin: 1px;
+    padding: 10px;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    bottom: 311px;
+    right: 691px;
+    clip-path: circle(65px);
+    background-color: #fff;
+    z-index: 2;
+}
+section .bttn-rock {
+    position: absolute;
+    display: flex;
+    bottom: 16%;
+    z-index: 10;
+    cursor: pointer;
+}
+section .circle-paper {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    top: 27.8%;
+    left: 760px;
+    clip-path: circle(80px);
+    background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    z-index: 1;
+}
+section .circle-after-paper {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    top: 282px;
+    left: 770px;
+    clip-path: circle(65px);
+    background-color: #fff;
+    z-index: 2;
+}
+section .bttn-paper {
+    position: absolute;
+    display: flex;
+    top: 8%;
+    left: 31%;
+    z-index: 10;
+    cursor: pointer;
+}
+section .circle-scissors {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    top: 28.6%;
+    right: 820px;
+    clip-path: circle(80px);
+    background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    z-index: 1;
+}
+section .circle-after-scissors {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    top: 290px;
+    right: 830px;
+    clip-path: circle(65px);
+    background-color: #fff;
+    z-index: 2;
+}
+section .bttn-scissors {
+    position: absolute;
+    display: flex;
+    top: 8%;
+    right: 31%;
+    z-index: 10;
+    cursor: pointer;
 }
 section .rules {
     position: absolute;
