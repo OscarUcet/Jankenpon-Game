@@ -1,5 +1,82 @@
+@import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body {
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.title {
+    position: absolute;
+    left: 40%;
+}
+header .logo {
+    color: #fff;
+    position: relative;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 700;
+}
+header ul {
+    position: absolute;
+    padding: 10px;
+    top: 50px;
+    left: -120px;
+    width: 200%;
+    border-radius: 2px;
+    outline-width: hsl(217, 16%, 45%);
+    outline-color: #fff;
+    outline-style: outset;
+
+} 
+header ul li {
+    list-style: none;
+    color: #fff;
+    font-weight: 600;
+} 
+header ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+header ul li#score {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 5px;
+    right: 0;
+    padding: 4px 5px;
+    margin-right: 10px;
+    min-height: 54px;
+    border-radius: 4px;
+    background: #fff;
+    color: hsl(229, 25%, 31%);
+    font-size: 24px;
+    font-weight: 700;
+}
+header ul li#score span {
+    color: hsl(229, 64%, 46%);
+}
+section {
+    position: relative;
+    display: flex;
+    justify-self: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 100px;
 }
