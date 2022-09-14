@@ -80,3 +80,19 @@ section {
     min-height: 100vh;
     padding: 0 100px;
 }
+section .rules {
+    position: absolute;
+    padding: 20px 20px;
+    bottom: 50px;
+    right: 50px;
+    width: 8%;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-radius: 2px;
+    outline-width: hsl(217, 16%, 45%);
+    outline-color: #fff;
+    outline-style: outset;
+}
