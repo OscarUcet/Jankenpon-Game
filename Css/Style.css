@@ -10,23 +10,22 @@ body {
 }
 header {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 0;
     left: 0;
     width: 100%;
     padding: 40px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .title {
-    position: absolute;
-    left: 40%;
+    position: relative;
 }
 header .logo {
-    color: #fff;
     position: relative;
-    font-size: 28px;
     text-decoration: none;
+    color: #fff;
+    font-size: 38px;
     font-weight: 700;
 }
 header ul {
@@ -39,17 +38,12 @@ header ul {
     outline-width: hsl(217, 16%, 45%);
     outline-color: #fff;
     outline-style: outset;
-
 } 
 header ul li {
     list-style: none;
     color: #fff;
+    font-size: 18px;
     font-weight: 700;
-} 
-header ul li a {
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
 }
 header ul li#score {
     position: absolute;
@@ -57,7 +51,7 @@ header ul li#score {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 5px;
+    top: 10%;
     right: 0;
     padding: 4px 5px;
     margin-right: 10px;
@@ -75,124 +69,141 @@ section {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
     padding: 0 100px;
 }
-section .options {
+section .container-bg {
+    top: 33%;
     position: absolute;
-    left: 18%;
-    width: 60%;
-    height: 400px;
-    padding: 10px 10px;
+}
+section .container-bg .triangle {
+    width: 480px;
+}
+section .container-rock {
+    position: relative;
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: center;
+    bottom: -190px;
+    right: -160px;
 }
-section .circle-rock {
-    position: absolute;
+section .container-rock .circle-rock {
+    position: relative;
+    display: flex;
     width: 160px;
     height: 160px;
-    display: flex;
-    bottom: 31%;
-    right: 46.5%;
     clip-path: circle(80px);
     background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
-    z-index: 1;
-}
-section .circle-after-rock {
-    position: absolute;
-    margin: 1px;
-    padding: 10px;
-    width: 140px;
-    height: 140px;
-    display: flex;
-    bottom: 311px;
-    right: 691px;
-    clip-path: circle(65px);
-    background-color: #fff;
-    z-index: 2;
-}
-section .bttn-rock {
-    position: absolute;
-    display: flex;
-    bottom: 16%;
-    z-index: 10;
     cursor: pointer;
 }
-section .circle-paper {
-    position: absolute;
+section .container-rock .circle-rock .circle-before-rock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
     width: 160px;
     height: 160px;
-    display: flex;
-    top: 27.8%;
-    left: 760px;
-    clip-path: circle(80px);
-    background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
-    z-index: 1;
+    clip-path: circle(60px);
 }
-section .circle-after-paper {
-    position: absolute;
-    width: 140px;
-    height: 140px;
+section .container-rock .circle-rock .icon-rock {
+    position: relative;
     display: flex;
-    top: 282px;
-    left: 770px;
-    clip-path: circle(65px);
-    background-color: #fff;
-    z-index: 2;
 }
-section .bttn-paper {
-    position: absolute;
+section .container-paper {
+    position: relative;
     display: flex;
-    top: 8%;
-    left: 31%;
-    z-index: 10;
-    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    top: -130px;
+    left: -180px;
 }
-section .circle-scissors {
-    position: absolute;
+section .container-paper .circle-paper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 160px;
     height: 160px;
-    display: flex;
-    top: 28.6%;
-    right: 820px;
     clip-path: circle(80px);
     background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
-    z-index: 1;
-}
-section .circle-after-scissors {
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    display: flex;
-    top: 290px;
-    right: 830px;
-    clip-path: circle(65px);
-    background-color: #fff;
-    z-index: 2;
-}
-section .bttn-scissors {
-    position: absolute;
-    display: flex;
-    top: 8%;
-    right: 31%;
-    z-index: 10;
     cursor: pointer;
+}
+section .container-paper .circle-paper .circle-before-paper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(60px);
+}
+section .container-paper .circle-paper .circle-before-rock .icon-paper {
+    position: relative;
+    display: flex;
+}
+section .container-scissors {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -130px;
+    right: -20px;
+}
+section .container-scissors .circle-scissors {
+    position: relative;
+    display: flex;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(80px);
+    background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    cursor: pointer;
+}
+section .container-scissors .circle-scissors .circle-before-scissors {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(60px);
+}
+section .container-scissors .circle-scissors .icon-scissors {
+    position: relative;
+    display: flex;
 }
 section .rules {
     position: absolute;
+    display: flex;
+    width: 200px;
     padding: 20px 20px;
-    bottom: 50px;
-    right: 50px;
-    width: 8%;
+    bottom: 3%;
+    right: 2%;
     text-align: center;
-    color: #fff;
-    font-size: 24px;
+    justify-content: center;
     letter-spacing: 2px;
+    font-size: 24px;
     font-weight: 700;
-    border-radius: 2px;
+    color: #fff;
+    border-radius: 14px;
     outline-width: hsl(217, 16%, 45%);
     outline-color: #fff;
     outline-style: outset;
+}
+section .rules:hover {
+    box-shadow: 14px 14px 10px rgba(0, 0, 0, 0.7);
+    font-size: 28px;
+    letter-spacing: 4px;
+}
+@media (max-width: 375px) {
+    /* 
+        - Mobile: 375px
+        - Desktop: 1366px 
+    */
+    section .rules {
+        color: #f00;
+    }
 }
