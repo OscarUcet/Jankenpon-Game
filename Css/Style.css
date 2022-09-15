@@ -204,6 +204,9 @@ section .rules:hover {
     letter-spacing: 4px;
 }
 @media (max-width: 1366px) and (min-width: 375px) {
+    section .container-bg .triangle {
+        width: 350px;
+    }
     section .rules {
         color: #f00;
     }
