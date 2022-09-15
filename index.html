@@ -7,7 +7,7 @@
         <link rel="shortcut icon" href="/images/favicon-32x32.png">
         <title>Jakenpon Game</title>
         <link rel="stylesheet" href="/Css/Style.css">
-        <script src="/Js/app.js" defer></script>
+        <script src="/Js/app.js" type="module" defer></script>
     </head>
     <body>
         <header>
@@ -17,36 +17,36 @@
                     <li>ROCK</li>
                     <li>PAPER</li>
                     <li>SCISSORS</li>
-                    <li id="score"><span>Score</span><div id="number">0</div></li>
+                    <li id="score"><span>Score</span><div id="score-num">0</div></li>
                 </ul>
             </div>
         </header>
         <section>
             <!-- Container Triangle Backgorund -->
             <div class="container-bg">
-                <img class="triangle" src="/images/bg-triangle.svg">
+                <img draggable="false" class="triangle" src="/images/bg-triangle.svg">
             </div>
             <!-- Container Rock -->
-            <article class="container-rock">
+            <article class="container-rock" id="container-rock">
                 <div class="circle-rock">
                     <div class="circle-before-rock">
-                        <img class="icon-rock" id="icon-rock" src="/images/icon-rock.svg">
+                        <img draggable="false" class="icon-rock" src="/images/icon-rock.svg">
                     </div>
                 </div>
             </article>
             <!-- Container Paper -->
-            <article class="container-paper">
+            <article class="container-paper" id="container-paper">
                 <div class="circle-paper">
                     <div class="circle-before-paper">
-                        <img class="icon-paper" id="icon-paper" src="/images/icon-paper.svg">
+                        <img draggable="false" class="icon-paper" src="/images/icon-paper.svg">
                     </div>
                 </div>
             </article>
             <!-- Container Scissors -->
-            <article class="container-scissors">
+            <article class="container-scissors" id="container-scissors">
                 <div class="circle-scissors">
                     <div class="circle-before-scissors">
-                        <img class="icon-scissors" id="icon-scissors" src="/images/icon-scissors.svg">
+                        <img draggable="false" class="icon-scissors" src="/images/icon-scissors.svg">
                     </div>
                 </div>
             </article>
@@ -54,7 +54,7 @@
             <div class="rules" id="rules">Rules</div>
             <!-- Modal Rules -->            
             <!-- <article class="container-rules">
-                <img class="icon-scissors" id="icon-scissors" src="/images/icon-scissors.svg">
+                <img draggable="false" class="icon-scissors" id="icon-scissors" src="/images/icon-scissors.svg">
             </article> -->
         </section>
     </body>
