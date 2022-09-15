@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Montserrat:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -10,47 +10,40 @@ body {
 }
 header {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 0;
     left: 0;
     width: 100%;
     padding: 40px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
 }
 .title {
-    position: absolute;
-    left: 40%;
+    position: relative;
 }
 header .logo {
-    color: #fff;
     position: relative;
-    font-size: 28px;
     text-decoration: none;
+    color: #fff;
+    font-size: 38px;
     font-weight: 700;
 }
 header ul {
     position: absolute;
     padding: 10px;
     top: 50px;
-    left: -120px;
+    left: -46%;
     width: 200%;
     border-radius: 2px;
     outline-width: hsl(217, 16%, 45%);
     outline-color: #fff;
     outline-style: outset;
-
 } 
 header ul li {
     list-style: none;
     color: #fff;
-    font-weight: 600;
-} 
-header ul li a {
-    color: #fff;
     font-size: 18px;
-    text-decoration: none;
+    font-weight: 700;
 }
 header ul li#score {
     position: absolute;
@@ -58,7 +51,7 @@ header ul li#score {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 5px;
+    top: 10%;
     right: 0;
     padding: 4px 5px;
     margin-right: 10px;
@@ -75,8 +68,142 @@ header ul li#score span {
 section {
     position: relative;
     display: flex;
-    justify-self: space-between;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
     padding: 0 100px;
+}
+section .container-bg {
+    top: 33%;
+    position: absolute;
+}
+section .container-bg .triangle {
+    width: 480px;
+}
+section .container-rock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -190px;
+    right: -160px;
+}
+section .container-rock .circle-rock {
+    position: relative;
+    display: flex;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(80px);
+    background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    cursor: pointer;
+}
+section .container-rock .circle-rock .circle-before-rock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(60px);
+}
+section .container-rock .circle-rock .icon-rock {
+    position: relative;
+    display: flex;
+}
+section .container-paper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -130px;
+    left: -180px;
+}
+section .container-paper .circle-paper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(80px);
+    background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    cursor: pointer;
+}
+section .container-paper .circle-paper .circle-before-paper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(60px);
+}
+section .container-paper .circle-paper .circle-before-rock .icon-paper {
+    position: relative;
+    display: flex;
+}
+section .container-scissors {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -130px;
+    right: -20px;
+}
+section .container-scissors .circle-scissors {
+    position: relative;
+    display: flex;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(80px);
+    background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    cursor: pointer;
+}
+section .container-scissors .circle-scissors .circle-before-scissors {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(60px);
+}
+section .container-scissors .circle-scissors .icon-scissors {
+    position: relative;
+    display: flex;
+}
+section .rules {
+    position: absolute;
+    display: flex;
+    width: 200px;
+    padding: 20px 20px;
+    bottom: 3%;
+    right: 2%;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 14px;
+    outline-width: hsl(217, 16%, 45%);
+    outline-color: #fff;
+    outline-style: outset;
+}
+section .rules:hover {
+    box-shadow: 14px 14px 10px rgba(0, 0, 0, 0.7);
+    font-size: 28px;
+    letter-spacing: 4px;
+}
+@media (max-width: 375px) {
+    /* 
+        - Mobile: 375px
+        - Desktop: 1366px 
+    */
+    section .rules {
+        color: #f00;
+    }
 }
