@@ -23,9 +23,6 @@ header {
     width: 100%;
     padding: 40px 100px;
 }
-.title {
-    position: relative;
-}
 header .logo {
     position: relative;
     text-decoration: none;
@@ -34,7 +31,7 @@ header .logo {
     font-weight: 700;
 }
 header ul {
-    position: absolute;
+    position: relative;
     padding: 10px;
     top: 50px;
     left: -46%;
@@ -202,12 +199,4 @@ section .rules:hover {
     box-shadow: 14px 14px 10px rgba(0, 0, 0, 0.7);
     font-size: 28px;
     letter-spacing: 4px;
-}
-@media (max-width: 1366px) and (min-width: 375px) {
-    section .container-bg .triangle {
-        width: 350px;
-    }
-    section .rules {
-        color: #f00;
-    }
 }
