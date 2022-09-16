@@ -109,5 +109,38 @@
     }
     .modal .container-rock .circle-rock .icon-rock {
         width: 36px;
+    }    
+    .container-arrow-left{
+        top: -431px;
+        left: 135px;
+    }
+    .container-arrow-left .beats {
+        top: -25px;
+        left: -9px;
+    }
+    .icon-arrow-left{
+        width: 40px;
+    }
+    .container-arrow-down-righ{
+        top: -370px;
+        left: 80px;
+    }
+    .container-arrow-down-righ .beats {
+        top: 28px;
+        left: -32px;
+    }
+    .icon-arrow-down-righ{
+        width: 40px;
+    }
+    .container-arrow-up-right{
+        top: -461px;
+        left: 179px;
+    }
+    .container-arrow-up-right .beats {
+        top: 27px;
+        left: 18px;
+    }
+    .icon-arrow-up-right{
+        width: 40px;
     }
 }
