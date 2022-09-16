@@ -1,0 +1,211 @@
+/* The Modal background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+/* Close Button */
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    width: 20px;
+}
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header {
+    padding: 2px 16px;
+}
+.modal-header .modal-rules-title {
+    color: hsl(229, 25%, 31%);
+    font-size: 38px;
+    font-weight: 700;
+}
+.modal-body {
+    width: 100%;
+    height: 553px;
+    padding: 10px 16px;
+}
+.modal-content {
+    position: relative;
+    top: 246px;
+    margin: auto;
+    padding-top: 2px;
+    width: 50rem;
+    border-radius: 7px;
+    background-color: #fefefe;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}  
+.modal .container-rock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -280px;
+    right: -6px;
+}
+.modal .container-rock .circle-rock {
+    position: relative;
+    display: flex;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(80px);
+    background: #b7bacd;
+    cursor: pointer;
+}
+.modal .container-rock .circle-rock .circle-before-rock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e1e4ed;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(60px);
+}
+.modal .container-rock .circle-rock .icon-rock {
+    position: relative;
+    display: flex;
+}
+.modal .container-paper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -118px;
+    left: -140px;
+}
+.modal .container-paper .circle-paper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(80px);
+    background: #b7bacd;
+    cursor: pointer;
+}
+.modal .container-paper .circle-paper .circle-before-paper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e1e4ed;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(60px);
+}
+.modal .container-paper .circle-paper .circle-before-rock .icon-paper {
+    position: relative;
+    display: flex;
+}
+.modal .container-scissors {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -279px;
+    right: -165px;
+}
+.modal .container-scissors .circle-scissors {
+    position: relative;
+    display: flex;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(80px);
+    background: #b7bacd;
+    cursor: pointer;
+}
+.modal .container-scissors .circle-scissors .circle-before-scissors {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e1e4ed;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(60px);
+}
+.modal .container-scissors .circle-scissors .icon-scissors {
+    position: relative;
+    display: flex;
+    top: 0;
+}
+.container-arrow-left{
+    position: relative;
+    display: flex;
+    top: -390px;
+    left: 359px;
+}
+.container-arrow-left .beats {
+    position: absolute;
+    display: flex;
+    top: -25px;
+    left: 2px;
+    color: #b7bacd;
+    font-size: 24px;
+}
+.icon-arrow-left{
+    position: relative;
+    display: flex;
+    width: 64px;
+}
+.container-arrow-down-righ{
+    position: relative;
+    display: flex;
+    top: -270px;
+    left: 269px;
+    rotate: 10deg;
+}
+.container-arrow-down-righ .beats {
+    position: absolute;
+    display: flex;
+    top: 48px;
+    left: -32px;
+    color: #b7bacd;
+    font-size: 24px;
+    rotate: 43deg;
+}
+.icon-arrow-down-righ{
+    position: relative;
+    display: flex;
+    width: 64px;
+}
+.container-arrow-up-right{
+    position: relative;
+    display: flex;
+    top: -459px;
+    left: 433px;
+    rotate: -10deg;
+}
+.container-arrow-up-right .beats {
+    position: absolute;
+    display: flex;
+    color: #b7bacd;
+    font-size: 24px;
+    top: 55px;
+    left: 40px;
+    rotate: -42deg;
+}
+.icon-arrow-up-right{
+    position: relative;
+    display: flex;
+    width: 64px;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: 0; opacity: 0}
+    to {top: 246px; opacity: 1}
+}

@@ -1,10 +1,13 @@
 import { Game } from './game.js';
-
+//Buttons get id:
 const rock = document.getElementById('container-rock');
 const paper = document.getElementById('container-paper');
 const scissors = document.getElementById('container-scissors');
-const rules = document.getElementById('rules');
-
+// Modal get id
+const modal = document.getElementById("myModal");
+const rules = document.getElementById("myBtn");
+const close = document.getElementById("icon-close");
+//
 const game = new Game(0);
 // button rock
 rock.addEventListener('click', ()=> {
@@ -23,6 +26,15 @@ scissors.addEventListener('click', ()=> {
 });
 // button rules
 rules.addEventListener('click', ()=> {
-    const message = 'Rules Coming Soon..';
-    console.log(message);
+    modal.style.display = "block";
 });
+// close the modal
+close.onclick = function() {
+    modal.style.display = "none";
+}
+// When the user clicks outside, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

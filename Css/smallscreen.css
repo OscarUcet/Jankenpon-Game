@@ -17,6 +17,13 @@
     section .container-paper .circle-paper .circle-before-paper {
         clip-path: circle(43px);
     }
+    /* Paper modal */
+    .modal .container-paper .circle-paper {
+        clip-path: circle(59px);
+    }
+    .modal .container-paper .circle-paper .circle-before-paper {
+        clip-path: circle(43px);
+    }
     section .container-paper {
         top: -125px;
         left: -115px;
@@ -26,6 +33,13 @@
         clip-path: circle(59px);
     }
     section .container-scissors .circle-scissors .circle-before-scissors {
+        clip-path: circle(43px);
+    }
+    /* scissors modal */
+    .modal .container-scissors .circle-scissors {
+        clip-path: circle(59px);
+    }
+    .modal .container-scissors .circle-scissors .circle-before-scissors {
         clip-path: circle(43px);
     }
     section .container-scissors {
@@ -39,11 +53,94 @@
     section .container-rock .circle-rock .circle-before-rock {
         clip-path: circle(43px);
     }
+    /* Rock */
+    .modal .container-rock .circle-rock {
+        clip-path: circle(59px);
+    }
+    .modal .container-rock .circle-rock .circle-before-rock {
+        clip-path: circle(43px);
+    }
     section .container-rock {
         bottom: -84px;
     }
     section .rules {
         width: 111px;
         right: 4%;
+    }
+    .modal-content {
+        width: 22rem;
+        height: 24rem;
+    }
+    .modal .container-paper {
+        top: -169px;
+        left: -91px;
+    }
+    .modal .container-paper .circle-paper {
+        clip-path: circle(46px);
+    }
+    .modal .container-paper .circle-paper .circle-before-paper {
+        clip-path: circle(34px);
+    }
+    .modal .container-paper .circle-paper .icon-paper {
+        width: 31px;
+    }
+    .modal .container-scissors {
+        top: -328px;
+        left: 89px;
+    }
+    .modal .container-scissors .circle-scissors {
+        clip-path: circle(46px);
+    }
+    .modal .container-scissors .circle-scissors .circle-before-scissors {
+        clip-path: circle(34px);
+    }
+    .modal .container-scissors .circle-scissors .icon-scissors {
+        width: 36px;
+    }
+    .modal .container-rock {
+        top: 135px;
+        left: -9px;
+    }
+    .modal .container-rock .circle-rock {
+        clip-path: circle(46px);
+    }
+    .modal .container-rock .circle-rock .circle-before-rock {
+        clip-path: circle(34px);
+    }
+    .modal .container-rock .circle-rock .icon-rock {
+        width: 36px;
+    }    
+    .container-arrow-left{
+        top: -431px;
+        left: 135px;
+    }
+    .container-arrow-left .beats {
+        top: -25px;
+        left: -9px;
+    }
+    .icon-arrow-left{
+        width: 40px;
+    }
+    .container-arrow-down-righ{
+        top: -370px;
+        left: 80px;
+    }
+    .container-arrow-down-righ .beats {
+        top: 28px;
+        left: -32px;
+    }
+    .icon-arrow-down-righ{
+        width: 40px;
+    }
+    .container-arrow-up-right{
+        top: -461px;
+        left: 179px;
+    }
+    .container-arrow-up-right .beats {
+        top: 27px;
+        left: 18px;
+    }
+    .icon-arrow-up-right{
+        width: 40px;
     }
 }

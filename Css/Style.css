@@ -195,8 +195,3 @@ section .rules {
     outline-color: #fff;
     outline-style: outset;
 }
-section .rules:hover {
-    box-shadow: 14px 14px 10px rgba(0, 0, 0, 0.7);
-    font-size: 28px;
-    letter-spacing: 4px;
-}

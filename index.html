@@ -7,6 +7,7 @@
         <link rel="shortcut icon" href="/images/favicon-32x32.png">
         <title>Jakenpon Game</title>
         <link rel="stylesheet" href="/Css/style.css">
+        <link rel="stylesheet" href="/Css/modalStyle.css">
         <link rel="stylesheet" media="screen and (min-width: 1366px)" href="/Css/widescreen.css">
         <link rel="stylesheet" media="screen and (max-width: 375px)" href="/Css/smallscreen.css">
         <script src="/Js/app.js" type="module" defer></script>
@@ -53,11 +54,58 @@
                 </div>
             </article>
             <!-- Button Rules -->            
-            <div class="rules" id="rules">Rules</div>
-            <!-- Modal Rules -->            
-            <!-- <article class="container-rules">
-                <img draggable="false" class="icon-scissors" id="icon-scissors" src="/images/icon-scissors.svg">
-            </article> -->
+            <div class="rules" id="myBtn">Rules</div>
+            <!-- Modal Rules -->
+            <div id="myModal" class="modal">
+                <!-- Modal Rules content -->
+                <article class="modal-content">
+                    <div class="modal-header">
+                      <span class="close" id="icon-close"><img draggable="false" class="icon-close" src="/images/icon-close.svg"></span>
+                      <h2 class="modal-rules-title">RULES</h2>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Container Rock -->
+                        <article class="container-rock">
+                            <div class="circle-rock">
+                                <div class="circle-before-rock">
+                                    <img draggable="false" class="icon-rock" src="/images/icon-rock.svg">
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Container Paper -->
+                        <article class="container-paper">
+                            <div class="circle-paper">
+                                <div class="circle-before-paper">
+                                    <img draggable="false" class="icon-paper" src="/images/icon-paper.svg">
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Container Scissors -->
+                        <article class="container-scissors">
+                            <div class="circle-scissors">
+                                <div class="circle-before-scissors">
+                                    <img draggable="false" class="icon-scissors" src="/images/icon-scissors.svg">
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Container Arrow Left -->
+                        <article class="container-arrow-left">
+                            <p class="beats">BEATS</p>
+                            <img draggable="false" class="icon-arrow-left" src="/images/arrow-left.svg">
+                        </article>
+                        <!-- Container Arrow Down Righ -->
+                        <article class="container-arrow-down-righ">
+                            <p class="beats">BEATS</p>
+                            <img draggable="false" class="icon-arrow-down-righ" src="/images/arrow-down-right.svg">
+                        </article>
+                        <!-- Container Arrow Up Right -->
+                        <article class="container-arrow-up-right">
+                            <p class="beats">BEATS</p>
+                            <img draggable="false" class="icon-arrow-up-right" src="/images/arrow-up-right.svg">
+                        </article>
+                    </div>
+                  </article>
+            </div>
         </section>
     </body>
 </html>

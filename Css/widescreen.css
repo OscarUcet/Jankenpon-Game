@@ -17,6 +17,12 @@
     section .container-paper .circle-paper .circle-before-paper {
         clip-path: circle(53px);
     }
+    .modal .container-paper .circle-paper {
+        clip-path: circle(71px);
+    }
+    .modal .container-paper .circle-paper .circle-before-paper {
+        clip-path: circle(53px);
+    }
     section .container-paper {
         top: -96px;
         left: -177px;
@@ -28,6 +34,12 @@
     section .container-scissors .circle-scissors .circle-before-scissors {
         clip-path: circle(53px);
     }
+    .modal .container-scissors .circle-scissors {
+        clip-path: circle(71px);
+    }
+    .modal .container-scissors .circle-scissors .circle-before-scissors {
+        clip-path: circle(53px);
+    }
     section .container-scissors {
         top: -96px;
         right: -14px;
@@ -37,6 +49,12 @@
         clip-path: circle(71px);
     }
     section .container-rock .circle-rock .circle-before-rock {
+        clip-path: circle(53px);
+    }
+    .modal .container-rock .circle-rock {
+        clip-path: circle(71px);
+    }
+    .modal .container-rock .circle-rock .circle-before-rock {
         clip-path: circle(53px);
     }
     section .container-rock {
