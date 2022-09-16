@@ -6,7 +6,7 @@ const scissors = document.getElementById('container-scissors');
 // Modal get id
 const modal = document.getElementById("myModal");
 const rules = document.getElementById("myBtn");
-const span = document.getElementsByClassName("close")[0];
+const close = document.getElementById("icon-close");
 //
 const game = new Game(0);
 // button rock
@@ -28,8 +28,8 @@ scissors.addEventListener('click', ()=> {
 rules.addEventListener('click', ()=> {
     modal.style.display = "block";
 });
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+// close the modal
+close.onclick = function() {
     modal.style.display = "none";
 }
 // When the user clicks outside, close it
