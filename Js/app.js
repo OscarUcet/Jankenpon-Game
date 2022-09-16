@@ -9,7 +9,6 @@ const game = new Game(0);
 // button rock
 rock.addEventListener('click', ()=> {
     console.log('My Choose: Rock #0')
-    // const game = new Game(0);
     game.setChoose(0);
 });
 // button paper

@@ -200,16 +200,3 @@ section .rules:hover {
     font-size: 28px;
     letter-spacing: 4px;
 }
-@media (max-width: 1366px) and (min-width: 375px) {
-    header ul {
-        top: 10px;
-        width: 299px;
-    }
-    section .container-bg .triangle {
-        width: 350px;
-    }
-    section .rules {
-        width: 111px;
-
-    }
-}

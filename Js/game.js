@@ -7,9 +7,7 @@
  * @param {number} selection - The value of option selected.
 */
 export class Game {
-    constructor(selection){
-        this.setChoose(selection);
-    }
+    constructor(){}
     /**
      * Handle Selection
      * @param {number} selection - The value of option selected.

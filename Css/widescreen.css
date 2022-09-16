@@ -1,0 +1,50 @@
+@media (min-width: 1366px){
+    header .logo {
+        left: 95px;
+    }
+    header ul {
+        top: 10px;
+        left: 0px;
+        width: 456px;
+    }
+    section .container-bg .triangle {
+        width: 438px;
+    }
+    /* Paper */
+    section .container-paper .circle-paper {
+        clip-path: circle(71px);
+    }
+    section .container-paper .circle-paper .circle-before-paper {
+        clip-path: circle(53px);
+    }
+    section .container-paper {
+        top: -96px;
+        left: -177px;
+    }
+    /* scissors */
+    section .container-scissors .circle-scissors {
+        clip-path: circle(71px);
+    }
+    section .container-scissors .circle-scissors .circle-before-scissors {
+        clip-path: circle(53px);
+    }
+    section .container-scissors {
+        top: -96px;
+        right: -14px;
+    }
+    /* Rock */
+    section .container-rock .circle-rock {
+        clip-path: circle(71px);
+    }
+    section .container-rock .circle-rock .circle-before-rock {
+        clip-path: circle(53px);
+    }
+    section .container-rock {
+        bottom: -206px;
+    }
+    section .rules {
+        width: 111px;
+        right: 6%;
+        bottom: 6%;
+    }
+}
