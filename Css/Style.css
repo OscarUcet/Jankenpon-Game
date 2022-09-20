@@ -12,6 +12,7 @@
 }
 body {
     background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    min-height: 100vh;
 }
 header {
     position: relative;
@@ -21,6 +22,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    margin-bottom: -15px;
     padding: 40px 100px;
 }
 header .logo {
@@ -72,8 +74,15 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     padding: 0 100px;
+    height: 550px;
+}
+section h1.message {
+    position: absolute;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
 }
 section p {
     position: relative;
@@ -83,11 +92,8 @@ section p {
     font-weight: 700;
 }
 section .container-bg {
-    top: 33%;
+    top: 117px;
     position: absolute;
-}
-section .container-bg .triangle {
-    width: 480px;
 }
 section .container-rock {
     position: relative;
@@ -189,7 +195,7 @@ section .player-choice {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -182px;
+    top: -95px;
     left: -201px;
 }
 section .player-choice p {
@@ -200,7 +206,7 @@ section .bot-choice {
     position: relative;
     align-items: center;
     justify-content: center;
-    top: -194px;
+    top: -125px;
     left: 115px;
 }
 section .bot-choice p {
@@ -300,11 +306,7 @@ section .container-scissors-active .circle-scissors-active .icon-scissors-active
 section .rules {
     position: absolute;
     display: flex;
-    width: 200px;
     padding: 20px 20px;
-    bottom: 3%;
-    right: 2%;
-    text-align: center;
     justify-content: center;
     letter-spacing: 2px;
     font-size: 24px;

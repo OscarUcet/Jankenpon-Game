@@ -9,6 +9,7 @@ const rules = document.getElementById("myBtn");
 const close = document.getElementById("icon-close");
 //
 const game = new Game();
+game.getCurrentScore();
 // button rock
 rock.addEventListener('click', ()=> {
     console.log('My Choose: Rock #0')

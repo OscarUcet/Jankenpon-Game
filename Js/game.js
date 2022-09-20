@@ -15,25 +15,34 @@ export class Game {
     */
     setChoose(selection){
         let choiceBot = this.ChoiceBot();
+        let message = document.createElement('h1');
+        message.className = 'message'
+        const mainPage = document.getElementById('mainSection');
         // juego empatado
         if (selection === choiceBot) {
-            return console.warn('Tied Game, play Again!!.');
+            message.innerText = 'Tied Game, play Again!!.';        
+            return mainPage.appendChild(message);
         }
         // piedra vs tijera
         else if (choiceBot === 0 && selection === 2) {
-            console.error('You Lose!.');
+            message.innerText = 'You Lose!.';
+            mainPage.appendChild(message);
             return this.ChangeCurrentScore(-1);
         }
         // papel vs piedra
         else if (choiceBot === 1 && selection === 0) {
-            console.error('You Lose!.');
+            message.innerText = 'You Lose!.';
+            mainPage.appendChild(message);
             return this.ChangeCurrentScore(-1);
         }
         //tijera vs papel
         else if (choiceBot === 2 && selection === 1) {
-            console.error('You Lose!.');
+            message.innerText = 'You Lose!.';
+            mainPage.appendChild(message);
             return this.ChangeCurrentScore(-1);
         } else {
+            message.innerText = 'You Win!.';
+            mainPage.appendChild(message);
             console.log('You Win!.');
             return this.ChangeCurrentScore(1);
         }
@@ -65,7 +74,19 @@ export class Game {
         let score = parseInt(currentScore.innerText);
         score += value;
         currentScore.innerText = score;
+        this.setCurrentScore(score);
         return score;
+    }
+    setCurrentScore(score) {
+        localStorage.setItem("Score", score);
+    }
+    getCurrentScore() {
+        let score = localStorage.getItem("Score");
+        if (isNaN(score)){
+            return score = 0;
+        } else {
+            document.getElementById('score-num').innerHTML = score;
+        }
     }
     changeForOptionSelected(option) {
         const mainPage = document.getElementById('mainSection');
