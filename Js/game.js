@@ -15,35 +15,38 @@ export class Game {
     */
     setChoose(selection){
         let choiceBot = this.ChoiceBot();
+        let bttnAgain = document.createElement('div');
+        bttnAgain.className = 'play-again';
+        bttnAgain.id = 'play-again';
+        bttnAgain.innerText = 'Play Again!';
         let message = document.createElement('h1');
         message.className = 'message'
         const mainPage = document.getElementById('mainSection');
         // juego empatado
         if (selection === choiceBot) {
-            message.innerText = 'Tied Game, play Again!!.';        
-            return mainPage.appendChild(message);
+            message.innerText = 'Tied Game, play Again!!.';       
+            return mainPage.append(message, bttnAgain);
         }
         // piedra vs tijera
         else if (choiceBot === 0 && selection === 2) {
             message.innerText = 'You Lose!.';
-            mainPage.appendChild(message);
+            mainPage.append(message, bttnAgain);
             return this.ChangeCurrentScore(-1);
         }
         // papel vs piedra
         else if (choiceBot === 1 && selection === 0) {
             message.innerText = 'You Lose!.';
-            mainPage.appendChild(message);
+            mainPage.append(message, bttnAgain);
             return this.ChangeCurrentScore(-1);
         }
         //tijera vs papel
         else if (choiceBot === 2 && selection === 1) {
             message.innerText = 'You Lose!.';
-            mainPage.appendChild(message);
+            mainPage.append(message, bttnAgain);
             return this.ChangeCurrentScore(-1);
         } else {
             message.innerText = 'You Win!.';
-            mainPage.appendChild(message);
-            console.log('You Win!.');
+            mainPage.append(message, bttnAgain);
             return this.ChangeCurrentScore(1);
         }
     }

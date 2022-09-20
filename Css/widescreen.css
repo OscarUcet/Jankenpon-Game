@@ -10,6 +10,9 @@
     section .container-bg .triangle {
         width: 480px;
     }
+    section .play-again {
+        bottom: 125px;
+    }
     /* Paper */
     section .container-paper .circle-paper {
         clip-path: circle(71px);

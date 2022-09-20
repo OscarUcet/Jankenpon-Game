@@ -7,23 +7,25 @@ const scissors = document.getElementById('container-scissors');
 const modal = document.getElementById("myModal");
 const rules = document.getElementById("myBtn");
 const close = document.getElementById("icon-close");
+const play = document.getElementById("play-again");
 //
 const game = new Game();
 game.getCurrentScore();
 // button rock
 rock.addEventListener('click', ()=> {
-    console.log('My Choose: Rock #0')
     game.changeForOptionSelected(0);
 });
 // button paper
 paper.addEventListener('click', ()=> {
-    console.log('My Choose: Paper #1')
     game.changeForOptionSelected(1);
 });
 // button scissors
 scissors.addEventListener('click', ()=> {
-    console.log('My Choose: Scissors #2')
     game.changeForOptionSelected(2);
+});
+// button modal play
+play.addEventListener('click', ()=> {
+    console.log('test');
 });
 // button modal rules
 rules.addEventListener('click', ()=> {

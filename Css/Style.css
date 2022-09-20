@@ -81,7 +81,7 @@ section h1.message {
     position: absolute;
     z-index: 1;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 45px;
     color: #fff;
 }
 section p {
@@ -90,6 +90,20 @@ section p {
     color: #fff;
     font-size: 32px;
     font-weight: 700;
+}
+section .play-again {
+    position: absolute;
+    display: flex;
+    padding: 20px 20px;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 14px;
+    outline-color: #fff;
+    outline-style: outset;
+    cursor: pointer;
 }
 section .container-bg {
     top: 117px;
