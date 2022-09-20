@@ -1,6 +1,6 @@
 @media (min-width: 1366px){
     header .logo {
-        left: 95px;
+        left: 15px;
     }
     header ul {
         top: 10px;
@@ -8,7 +8,10 @@
         width: 456px;
     }
     section .container-bg .triangle {
-        width: 438px;
+        width: 480px;
+    }
+    section .play-again {
+        bottom: 125px;
     }
     /* Paper */
     section .container-paper .circle-paper {
@@ -60,9 +63,9 @@
     section .container-rock {
         bottom: -206px;
     }
-    section .rules {
-        width: 111px;
-        right: 6%;
-        bottom: 6%;
+    section .rules {   
+        width: 200px;
+        right: 2%;
+        bottom: 4%;
     }
 }
