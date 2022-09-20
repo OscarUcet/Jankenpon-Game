@@ -19,6 +19,7 @@ export class Game {
         bttnAgain.className = 'play-again';
         bttnAgain.id = 'play-again';
         bttnAgain.innerText = 'Play Again!';
+        bttnAgain.addEventListener('click', ()=> { window.location.href = window.location.href; });
         let message = document.createElement('h1');
         message.className = 'message'
         const mainPage = document.getElementById('mainSection');

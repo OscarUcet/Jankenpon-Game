@@ -7,7 +7,6 @@ const scissors = document.getElementById('container-scissors');
 const modal = document.getElementById("myModal");
 const rules = document.getElementById("myBtn");
 const close = document.getElementById("icon-close");
-const play = document.getElementById("play-again");
 //
 const game = new Game();
 game.getCurrentScore();
@@ -22,10 +21,6 @@ paper.addEventListener('click', ()=> {
 // button scissors
 scissors.addEventListener('click', ()=> {
     game.changeForOptionSelected(2);
-});
-// button modal play
-play.addEventListener('click', ()=> {
-    console.log('test');
 });
 // button modal rules
 rules.addEventListener('click', ()=> {
