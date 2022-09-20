@@ -14,7 +14,7 @@ body {
     background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
 header {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,6 +74,13 @@ section {
     justify-content: center;
     min-height: 100vh;
     padding: 0 100px;
+}
+section p {
+    position: relative;
+    display: flex;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
 }
 section .container-bg {
     top: 33%;
@@ -174,6 +181,119 @@ section .container-scissors .circle-scissors .circle-before-scissors {
     clip-path: circle(60px);
 }
 section .container-scissors .circle-scissors .icon-scissors {
+    position: relative;
+    display: flex;
+}
+section .player-choice {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -182px;
+    left: -201px;
+}
+section .player-choice p {
+    top: -117px;
+    left: 163px;
+}
+section .bot-choice {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: -194px;
+    left: 115px;
+}
+section .bot-choice p {
+    top: -14px;
+    left: 6px;
+}
+section .container-rock-active {
+    align-items: center;
+    justify-content: center;
+    top: -182px;
+    left: -411px;
+}
+section .container-rock-active .circle-rock-active {
+    position: relative;
+    display: flex;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(80px);
+    background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+section .container-rock-active .circle-rock-active .circle-before-rock-active {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(60px);
+}
+section .container-rock-active .circle-rock-active .icon-rock-active {
+    position: relative;
+    display: flex;
+}
+section .container-paper-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -130px;
+    left: -180px;
+}
+section .container-paper-active .circle-paper-active {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(80px);
+    background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    cursor: pointer;
+}
+section .container-paper-active .circle-paper-active .circle-before-paper-active {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(60px);
+}
+section .container-paper-active .circle-paper-active .circle-before-paper-active .icon-paper-active {
+    position: relative;
+    display: flex;
+}
+section .container-scissors-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -130px;
+    right: -20px;
+}
+section .container-scissors-active .circle-scissors-active {
+    position: relative;
+    display: flex;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(80px);
+    background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    cursor: pointer;
+}
+section .container-scissors-active .circle-scissors-active .circle-before-scissors-active {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 160px;
+    height: 160px;
+    clip-path: circle(60px);
+}
+section .container-scissors-active .circle-scissors-active .icon-scissors-active {
     position: relative;
     display: flex;
 }

@@ -45,14 +45,14 @@ export class Game {
         let choiceBot = parseInt(Math.random() * 3);
         switch (choiceBot) {
             case 0:
-                console.log('bot elije roca: ', choiceBot);// elimitar luego de completar el ticket: "Show the result of the game"
-                break;
+                this.botChoice(0);
+            break;
             case 1:
-                console.log('bot elije papel: ', choiceBot);// elimitar luego de completar el ticket: "Show the result of the game"
-                break;
+                this.botChoice(1);
+            break;
             case 2:
-                console.log('bot elije tijera: ', choiceBot);// elimitar luego de completar el ticket: "Show the result of the game"
-                break;
+                this.botChoice(2);
+            break;
         }
         return choiceBot;
     }
@@ -66,5 +66,110 @@ export class Game {
         score += value;
         currentScore.innerText = score;
         return score;
+    }
+    changeForOptionSelected(option) {
+        const mainPage = document.getElementById('mainSection');
+
+        if (option === 0){
+            mainPage.innerHTML = '';
+            const quizEndHtml = `
+                <article class="player-choice">
+                    <p>Your Choice: </p>
+                        <article class="container-rock-active">
+                            <div class="circle-rock-active">
+                                <div class="circle-before-rock-active">
+                                    <img draggable="false" class="icon-rock-active" src="/images/icon-rock.svg">
+                                </div>
+                            </div>
+                        </article>
+                </article>
+                <article class="bot-choice" id="bot-choice">
+                </article>
+            `;
+            mainPage.innerHTML = quizEndHtml;
+            this.setChoose(0);
+        }
+        if (option === 1){
+            mainPage.innerHTML = '';
+            const quizEndHtml = `
+                <article class="player-choice">
+                    <p>Your Choice: </p>
+                    <article class="container-paper-active">
+                        <div class="circle-paper-active">
+                            <div class="circle-before-paper-active">
+                                <img draggable="false" class="icon-paper-active" src="/images/icon-paper.svg">
+                            </div>
+                        </div>
+                    </article>
+                </article>
+                <article class="bot-choice" id="bot-choice">
+                </article>
+            `;
+            mainPage.innerHTML = quizEndHtml;
+            this.setChoose(1);
+        }
+        if (option === 2){
+            mainPage.innerHTML = '';
+            const quizEndHtml = `
+                <article class="player-choice">
+                    <p>Your Choice: </p>
+                    <article class="container-scissors-active">
+                        <div class="circle-scissors-active">
+                            <div class="circle-before-scissors-active">
+                                <img draggable="false" class="icon-scissors-active" src="/images/icon-scissors.svg">
+                            </div>
+                        </div>
+                    </article>
+                </article>
+                <article class="bot-choice" id="bot-choice">
+                </article>
+            `;
+            mainPage.innerHTML = quizEndHtml;
+            this.setChoose(2);
+        }
+    }    
+    botChoice(option) {
+        const addChoice = document.getElementById('bot-choice');
+        addChoice.innerHTML = '';
+
+        if (option === 0){
+            const quizEndHtml = `
+                <p>Bot Choice: </p>
+                <article class="container-rock-active">
+                    <div class="circle-rock-active">
+                        <div class="circle-before-rock-active">
+                            <img draggable="false" class="icon-rock-active" src="/images/icon-rock.svg">
+                        </div>
+                    </div>
+                </article>
+            `;
+            addChoice.innerHTML = quizEndHtml;
+        }
+        if (option === 1){
+            const quizEndHtml = `
+                <p>Bot Choice: </p>
+                <article class="container-paper-active">
+                    <div class="circle-paper-active">
+                        <div class="circle-before-paper-active">
+                            <img draggable="false" class="icon-paper-active" src="/images/icon-paper.svg">
+                        </div>
+                    </div>
+                </article>
+            `;
+            addChoice.innerHTML = quizEndHtml;
+        }
+        if (option === 2){
+            const quizEndHtml = `
+                <p>Bot Choice: </p>
+                <article class="container-scissors-active">
+                    <div class="circle-scissors-active">
+                        <div class="circle-before-scissors-active">
+                            <img draggable="false" class="icon-scissors-active" src="/images/icon-scissors.svg">
+                        </div>
+                    </div>
+                </article>
+            `;
+            addChoice.innerHTML = quizEndHtml;
+        }
     }
 }

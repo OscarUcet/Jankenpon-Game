@@ -8,27 +8,27 @@ const modal = document.getElementById("myModal");
 const rules = document.getElementById("myBtn");
 const close = document.getElementById("icon-close");
 //
-const game = new Game(0);
+const game = new Game();
 // button rock
 rock.addEventListener('click', ()=> {
     console.log('My Choose: Rock #0')
-    game.setChoose(0);
+    game.changeForOptionSelected(0);
 });
 // button paper
 paper.addEventListener('click', ()=> {
     console.log('My Choose: Paper #1')
-    game.setChoose(1);
+    game.changeForOptionSelected(1);
 });
 // button scissors
 scissors.addEventListener('click', ()=> {
     console.log('My Choose: Scissors #2')
-    game.setChoose(2);
+    game.changeForOptionSelected(2);
 });
-// button rules
+// button modal rules
 rules.addEventListener('click', ()=> {
     modal.style.display = "block";
 });
-// close the modal
+// close the modal rules
 close.onclick = function() {
     modal.style.display = "none";
 }
