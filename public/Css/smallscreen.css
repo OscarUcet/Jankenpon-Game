@@ -1,4 +1,12 @@
 @media (max-width: 375px) {
+    section h1.message {
+        top: 175px;
+        font-size: 36px;
+    }
+    section .play-again {
+        top: 245px;
+        font-size: 20px;
+    }
     header .logo {
         left: 11px;
     }
