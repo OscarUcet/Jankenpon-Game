@@ -79,6 +79,7 @@ section {
 }
 section h1.message {
     position: absolute;
+    top: 36px;
     z-index: 1;
     font-weight: 700;
     font-size: 45px;
@@ -94,6 +95,7 @@ section p {
 section .play-again {
     position: absolute;
     display: flex;
+    top: 110px;
     padding: 20px 20px;
     justify-content: center;
     letter-spacing: 2px;

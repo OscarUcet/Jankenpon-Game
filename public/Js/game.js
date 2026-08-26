@@ -75,22 +75,27 @@ export class Game {
     ChangeCurrentScore(value) {
         const currentScore = document.getElementById('score-num');
 
-        let score = parseInt(currentScore.innerText);
+        let score = Number.parseInt(currentScore.innerText, 10);
+        if (!Number.isFinite(score)) {
+            score = 0;
+        }
         score += value;
         currentScore.innerText = score;
         this.setCurrentScore(score);
         return score;
     }
     setCurrentScore(score) {
-        localStorage.setItem("Score", score);
+        localStorage.setItem('Score', String(score));
     }
     getCurrentScore() {
-        let score = localStorage.getItem("Score");
-        if (isNaN(score)) {
-            return score = 0;
-        } else {
-            document.getElementById('score-num').innerHTML = score;
+        const storedScore = Number.parseInt(localStorage.getItem('Score'), 10);
+        const score = Number.isFinite(storedScore) ? storedScore : 0;
+
+        document.getElementById('score-num').innerText = score;
+        if (score !== storedScore) {
+            this.setCurrentScore(score);
         }
+        return score;
     }
     changeForOptionSelected(option) {
         const mainPage = document.getElementById('mainSection');
